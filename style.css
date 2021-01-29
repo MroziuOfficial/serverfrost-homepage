@@ -1,0 +1,62 @@
+@keyframes animation_background {
+    0%{background-position: 0% 83%}
+    50%{background-position: 100% 17%}
+    100%{background-position: 0% 83%}
+}
+
+body {
+	color: #e6ebe7;
+	margin: 0;
+	font-family: serif, Verdana, Helvetica, Calibri;
+	text-align: center;
+}
+
+.background_container {
+    position: absolute;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+	background: linear-gradient(270deg, #591aa3, #0b6e0e);
+    background-size: 400% 400%;
+    animation: animation_background 30s ease infinite;
+}
+
+.navigation {
+	overflow: hidden;
+	background-color: #666666;
+	opacity: 0.4;
+}
+
+.navi_left {
+	float: left;
+	background-color: #666666;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navi_left:hover {
+	background-color: #ffffff47;
+	color: #000000;
+}
+
+.navi_right {
+	float: right;
+	background-color: #666666;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navi_right:hover {
+	background-color: #ffffff47;
+	color: #000000;
+}
+
+.navi_text {
+	color: #ffffff;
+}
+
+/* www.gradient-animator.com */
