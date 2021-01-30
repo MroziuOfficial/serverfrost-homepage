@@ -38,15 +38,20 @@ body {
 	font-weight: bold;
 }
 
-@media screen and (min-width: 460px) {
-    .header {
-        font-size: 32px;
-    }
+.main_text {
+	font-size: 3.2vw;
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
-.main_text {
-	font-size: 1.2vw;
-	text-align: center;
+@media screen and (min-width: 460px) {
+    .header {
+        font-size: 40px;
+    }
+	.main_text {
+		font-size: 18px;
+	}
 }
 
 .navigation {
