@@ -1,5 +1,5 @@
 /*
-Copyright ⓒ 2021 Jakub Mrozowski (MroziuOfficial) <kubamaciekm22@gmail.com>
+Copyright © 2021 Jakub Mrozowski (MroziuOfficial) <kubamaciekm22@gmail.com>
 ServerFrost Homepage v0.1
 This file is part of serverfrost-homepage (https://github.com/MroziuOfficial/serverfrost-homepage)
 GNU General Public License v3 (GPL-3)
@@ -15,7 +15,6 @@ body {
 	color: #e6ebe7;
 	margin: 0;
 	font-family: serif, Verdana, Helvetica, Calibri;
-	text-align: center;
 }
 
 .background_container {
@@ -26,6 +25,28 @@ body {
 	background: linear-gradient(270deg, #591aa3, #0b6e0e);
     background-size: 400% 400%;
     animation: animation_background 30s ease infinite;
+}
+
+.main_content {
+	padding: 0px;
+}
+
+.header {
+	padding-top: 20px;
+	font-size: 10vw;
+	text-align: center;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 460px) {
+    .header {
+        font-size: 32px;
+    }
+}
+
+.main_text {
+	font-size: 1.2vw;
+	text-align: center;
 }
 
 .navigation {
@@ -66,4 +87,15 @@ body {
 	color: #ffffff;
 }
 
+.footer {
+	overflow: hidden;
+	background-color: #666666;
+	opacity: 0.4;
+	text-decoration: none;
+	text-align: left;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding-left: 14px;
+}
 /* www.gradient-animator.com */
