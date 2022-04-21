@@ -16,24 +16,51 @@ GNU General Public License v3 (GPL-3)
 }*/
 
 @-webkit-keyframes BackgroundTheme {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
+
 @-moz-keyframes BackgroundTheme {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
+
 @-o-keyframes BackgroundTheme {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
+
 @keyframes BackgroundTheme {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 /*@keyframes BackgroundTheme {
@@ -43,9 +70,9 @@ GNU General Public License v3 (GPL-3)
 }*/
 
 body {
-	color: #e6ebe7;
-	margin: 0;
-	font-family: serif, Verdana, Helvetica, Calibri;
+    color: #e6ebe7;
+    margin: 0;
+    font-family: serif, Verdana, Helvetica, Calibri;
 }
 
 .background_container {
@@ -53,95 +80,117 @@ body {
     overflow: auto;
     width: 100%;
     height: 100%;
-	background: linear-gradient(270deg, #9d10dd, #dd1033, #19c0d2);
+    background: linear-gradient(270deg, #9d10dd, #dd1033, #19c0d2);
     background-size: 600% 600%;
     -webkit-animation: BackgroundTheme 40s ease infinite;
     -moz-animation: BackgroundTheme 40s ease infinite;
     -o-animation: BackgroundTheme 40s ease infinite;
     animation: BackgroundTheme 40s ease infinite;
-	/*background: linear-gradient(270deg, #591aa3, #0b6e0e);
+    /*background: linear-gradient(270deg, #591aa3, #0b6e0e);
     background-size: 400% 400%;
     animation: BackgroundTheme 40s ease infinite;*/
 }
 
 .main_content {
-	padding: 0px;
+    padding: 0px;
 }
 
 .header {
-	padding-top: 20px;
-	font-size: 10vw;
-	text-align: center;
-	font-weight: bold;
+    padding-top: 20px;
+    font-size: 10vw;
+    text-align: center;
+    font-weight: bold;
 }
 
 .main_text {
-	font-size: 3.2vw;
-	text-align: center;
-	padding-left: 5px;
-	padding-right: 5px;
+    font-size: 3.2vw;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navigation {
+    overflow: hidden;
+    background-color: #666666;
+    opacity: 0.4;
+    display: flex;
+}
+
+.navi_left {
+    float: left;
+    flex: 1;
+    display: flex;
+}
+
+.navi_left > a {
+    background-color: #666666;
+    display: block;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    transition: all 0.3s;
+    word-break: break-word;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.navi_left > a:hover {
+    background-color: #ffffff47;
+    color: #000000;
+    transition: all 0.3s;
+}
+
+.navi_right {
+    float: right;
+}
+
+.navi_right > a {
+    background-color: #666666;
+    display: block;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.navi_right > a:hover {
+    background-color: #ffffff47;
+    color: #000000;
+    transition: all 0.3s;
+}
+
+.footer {
+    overflow: hidden;
+    background-color: #666666;
+    opacity: 0.4;
+    text-decoration: none;
+    text-align: left;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-left: 14px;
 }
 
 @media screen and (min-width: 460px) {
     .header {
         font-size: 40px;
     }
-	.main_text {
-		font-size: 18px;
-	}
+
+    .main_text {
+        font-size: 18px;
+    }
+
+    .navi_left > a {
+        padding: 14px 16px;
+        font-size: 16px;
+    }
+
+    .navi_right > a {
+        padding: 14px 16px;
+        font-size: 16px;
+    }
 }
 
-.navigation {
-	overflow: hidden;
-	background-color: #666666;
-	opacity: 0.4;
-}
-
-.navi_left {
-	float: left;
-	background-color: #666666;
-	display: block;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	transition: all 0.3s;
-}
-
-.navi_left:hover {
-	background-color: #ffffff47;
-	color: #000000;
-	transition: all 0.3s;
-}
-
-.navi_right {
-	float: right;
-	background-color: #666666;
-	display: block;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	transition: all 0.3s;
-}
-
-.navi_right:hover {
-	background-color: #ffffff47;
-	color: #000000;
-	transition: all 0.3s;
-}
-
-.navi_text {
-	color: #ffffff;
-}
-
-.footer {
-	overflow: hidden;
-	background-color: #666666;
-	opacity: 0.4;
-	text-decoration: none;
-	text-align: left;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	padding-left: 14px;
-}
 /* www.gradient-animator.com */
