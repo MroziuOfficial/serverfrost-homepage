@@ -1,6 +1,6 @@
 /*
 Copyright © 2021-2022 Jakub Mrozowski (MroziuOfficial) <kubamaciekm22@gmail.com>
-ServerFrost Homepage v0.2
+ServerFrost Homepage v0.3
 This file is part of serverfrost-homepage (https://github.com/MroziuOfficial/serverfrost-homepage)
 GNU General Public License v3 (GPL-3)
 */
@@ -63,6 +63,16 @@ GNU General Public License v3 (GPL-3)
     }
 }
 
+@font-face {
+    font-family: "MuseoRegular";
+    src: url("../fonts/MuseoSansForDell-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Museo300";
+    src: url("../fonts/MuseoSansForDell-300.otf") format("opentype");
+}
+
 /*@keyframes BackgroundTheme {
     0%{background-position: 0% 83%}
     50%{background-position: 100% 17%}
@@ -72,7 +82,8 @@ GNU General Public License v3 (GPL-3)
 body {
     color: #e6ebe7;
     margin: 0;
-    font-family: serif, Verdana, Helvetica, Calibri;
+    font-family: MuseoRegular;
+    letter-spacing: 0px;
 }
 
 .background_container {
@@ -130,6 +141,7 @@ body {
     text-decoration: none;
     transition: all 0.3s;
     word-break: break-word;
+    font-family: Museo300;
     color: #ffffff;
     font-size: 15px;
 }
@@ -153,7 +165,7 @@ body {
     color: white;
     padding: 12px 14px;
     background-color: inherit;
-    font-family: inherit;
+    font-family: Museo300;
     margin: 0;
     transition: all 0.3s;
 }
@@ -179,6 +191,7 @@ body {
     color: white;
     padding: 12px 16px;
     text-decoration: none;
+    font-family: Museo300;
     display: block;
     text-align: left;
 }
@@ -205,6 +218,7 @@ body {
     padding: 12px 14px;
     text-decoration: none;
     transition: all 0.3s;
+    font-family: Museo300;
     color: #ffffff;
     font-size: 15px;
 }
@@ -222,6 +236,8 @@ body {
     text-decoration: none;
     text-align: left;
     position: fixed;
+    font-family: MuseoRegular;
+    font-style: italic;
     bottom: 0;
     width: 100%;
     padding-left: 14px;

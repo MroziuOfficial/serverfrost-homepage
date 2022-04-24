@@ -1,6 +1,6 @@
 /*
 Copyright © 2021-2022 Jakub Mrozowski (MroziuOfficial) <kubamaciekm22@gmail.com>
-ServerFrost Homepage v0.2
+ServerFrost Homepage v0.3
 This file is part of serverfrost-homepage (https://github.com/MroziuOfficial/serverfrost-homepage)
 GNU General Public License v3 (GPL-3)
 */
